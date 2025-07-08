@@ -270,6 +270,17 @@ document.addEventListener('click', (event) => {
   }
 });
 
+window.addEventListener('resize', (event) => {
+    console.log('resize')
+    wx = window.innerWidth;
+    wy = window.innerHeight;
+    renderer.setSize(wx, wy);
+
+    camera.aspect = wx / wy;
+    camera.updateProjectionMatrix();
+
+})
+
 //scene.add(text);
 
 const camera = new THREE.PerspectiveCamera(75, wx / wy, 0.1, 1000);
