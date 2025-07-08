@@ -10,6 +10,8 @@ import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 
+console.log('Version 5,000,000')
+
 const fontLoader = new FontLoader()
 
 const donuts = []
